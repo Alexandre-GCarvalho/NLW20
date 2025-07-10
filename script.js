@@ -186,6 +186,8 @@ const perguntarAI = async (question, game, apiKey) => {
         pergunta = perguntaFifa25
     }
 
+    pergunta += `\n\nPergunta do usuário: ${question}\nResposta:`
+
 
     const contents = [{
         role: "user",
